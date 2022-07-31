@@ -1,0 +1,44 @@
+body {
+    overflow-y: hidden;
+}
+
+#great_day {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    opacity: 0%;
+    animation: great_day 2s 1;
+    animation-fill-mode: forwards;
+}
+
+#emoji {
+    position: absolute;
+    left: 46.5%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    opacity: 0%;
+    animation: emoji 2s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes great_day {
+    100% {
+        opacity: 100%;
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes emoji {
+    1% {
+        height: 0%;
+        width: 0%;
+    }
+    100% {
+        opacity: 100%;
+        height: 450px;
+        width: 450px;
+    }
+}
